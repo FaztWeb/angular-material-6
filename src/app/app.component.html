@@ -1,0 +1,25 @@
+<mat-toolbar color="primary" style="background-color: #424242">
+  <mat-toolbar-row>
+      <button mat-button [matMenuTriggerFor]="menu">
+          <i class="material-icons">
+            view_headline
+            </i>
+        </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Post</button>
+      <button mat-menu-item>
+        <a href="http://faztweb.com" target="_blank">
+          FaztWeb
+        </a>
+      </button>
+  </mat-menu>
+  
+    <span class="example-spacer"></span>
+    <button mat-button style="background-color: #fff; color: #000">Login</button>
+    <button mat-button>Register</button>
+      
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+<router-outlet></router-outlet>
